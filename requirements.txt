@@ -2,7 +2,7 @@ chromadb==0.4.8
 python-dotenv == 1.0.0
 gitpython==3.1.37
 langchain==0.0.335
-langsmith==0.0.52
+langsmith==0.0.63
 pydantic==1.10.12
 pydantic_core==2.6.3
 python-dotenv==1.0.0
