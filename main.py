@@ -8,5 +8,7 @@ model = ChatOpenAI()
 
 # Now we need to create the connection to the database.
 from langchain.utilities import SQLDatabase
-db = SQLDatabase.from_uri("sqlite:///nba_roster.db", sample_rows_in_table_info= 0)
-print(db)
+db = SQLDatabase.from_uri("sqlite:///nba_roster.db")
+
+string = db.get_table_names()
+
