@@ -1,2 +1,12 @@
 # import load_dotenv()
 from dotenv import load_dotenv
+load_dotenv()
+
+# Creating the connection to the model.
+from langchain.chat_models import ChatOpenAI
+model = ChatOpenAI()
+
+# Now we need to create the connection to the database.
+from langchain.utilities import SQLDatabase
+db = SQLDatabase.from_uri("sqlite:///nba_roster.db", sample_rows_in_table_info= 0)
+print(db)
